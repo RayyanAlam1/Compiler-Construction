@@ -1,0 +1,20 @@
+# NumPat Compiler Test Case 9: Sum Range Function
+# Tests: Loop with conditions, parameter range checking, accumulation
+
+int sumRange(start, end) {
+    let sum = 0
+    let i = start
+    
+    while i <= end {
+        sum = sum + i
+        i = i + 1
+    }
+    
+    return sum
+}
+
+# sumRange(1, 10) = 1+2+3+4+5+6+7+8+9+10 = 55
+# sumRange(5, 15) = 5+6+7+8+9+10+11+12+13+14+15 = 110
+print sumRange(1, 10)
+print sumRange(5, 15)
+print sumRange(1, 5)

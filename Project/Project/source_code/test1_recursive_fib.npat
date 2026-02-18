@@ -1,0 +1,12 @@
+# Test Case 1: Recursive Fibonacci Function
+# Tests: function definition, parameters, recursion, return statements
+
+int fib(n) {
+    if n < 2 {
+        return n
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+
+let result = fib(10)
+print result

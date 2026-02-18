@@ -1,0 +1,9 @@
+# NumPat Compiler Test Case 1: Simple Function with No Parameters
+# Tests: Basic function definition, return statement, literal value
+
+int getNumber() {
+    return 42
+}
+
+let result = getNumber()
+print result

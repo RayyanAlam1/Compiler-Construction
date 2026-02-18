@@ -1,0 +1,43 @@
+# NumPat Compiler Test Case 10: Complex Program with Multiple Features
+# Tests: Multiple functions, recursion, loops, conditionals, parameter binding
+
+int power(base, exp) {
+    if exp == 0 {
+        return 1
+    }
+    return base * power(base, exp - 1)
+}
+
+int countDigits(n) {
+    if n == 0 {
+        return 1
+    }
+    
+    let count = 0
+    let num = n
+    
+    while num > 0 {
+        count = count + 1
+        num = num / 10
+    }
+    
+    return count
+}
+
+void printPowers(base, maxExp) {
+    let i = 0
+    
+    while i <= maxExp {
+        print power(base, i)
+        i = i + 1
+    }
+}
+
+# Test power function (2^5 = 32)
+print power(2, 5)
+
+# Test countDigits (42 has 2 digits)
+print countDigits(42)
+
+# Test void function with loop (prints 1, 2, 4, 8)
+printPowers(2, 3)

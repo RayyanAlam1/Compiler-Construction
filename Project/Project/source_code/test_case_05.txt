@@ -1,0 +1,18 @@
+# NumPat Compiler Test Case 5: Factorial with Loop
+# Tests: Loop inside function, local variables, variable reassignment
+
+int factorial(n) {
+    let result = 1
+    let i = 1
+    
+    while i <= n {
+        result = result * i
+        i = i + 1
+    }
+    
+    return result
+}
+
+print factorial(5)
+print factorial(6)
+print factorial(10)

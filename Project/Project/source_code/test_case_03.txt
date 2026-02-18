@@ -1,0 +1,14 @@
+# NumPat Compiler Test Case 3: Function with Multiple Parameters
+# Tests: Multiple parameter passing, parameter binding, arithmetic
+
+int add(a, b) {
+    return a + b
+}
+
+int multiply(x, y) {
+    return x * y
+}
+
+print add(3, 4)
+print multiply(6, 7)
+print add(multiply(2, 3), 5)

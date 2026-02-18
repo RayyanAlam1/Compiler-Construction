@@ -1,0 +1,34 @@
+# Test Case 2: Multiple Functions with Different Signatures
+# Tests: int function, void function, 0 parameters, multiple parameters
+
+int add(a, b) {
+    return a + b
+}
+
+int square(x) {
+    return x * x
+}
+
+void printSum(x, y) {
+    let sum = x + y
+    print sum
+}
+
+int getNumber() {
+    return 42
+}
+
+# Test calls
+let num1 = 5
+let num2 = 3
+
+let sum_result = add(num1, num2)
+print sum_result
+
+let square_result = square(4)
+print square_result
+
+printSum(10, 20)
+
+let const_num = getNumber()
+print const_num
